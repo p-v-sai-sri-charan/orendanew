@@ -1,5 +1,6 @@
 import React,{Fragment,useState} from 'react';
 import Logo from "../../Images/Logo/Orenda.png"
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 function Navbar() {
     const [menu, setMenu] = useState(false)
@@ -19,12 +20,12 @@ function Navbar() {
                 <div className={`lg:flex flex-grow items-center ${menu?`flex`:`hidden`}` } id="example-navbar-danger">
                   <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
                     <li className="nav-item">
-                      <a className="px-4 py-1 flex items-center text-xl leading-snug hover:opacity-75" href="#What-we-do">
+                      <a className="px-4 py-1 flex items-center text-xl leading-snug hover:opacity-75" href="/">
                         <span className="text-yellow-700 font-themefont">Home</span>
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a className="px-4 py-1 flex items-center text-xl leading-snug hover:opacity-75" href="#What-we-do">
+                      <a className="px-4 py-1 flex items-center text-xl leading-snug hover:opacity-75" href="/Projects">
                         <span className="text-yellow-700 font-themefont">Projects</span>
                       </a>
                     </li>

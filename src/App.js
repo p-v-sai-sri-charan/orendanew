@@ -1,17 +1,21 @@
 import React from 'react'
-import Navbar from './components/Navbar/Navbar'
-import Slider from './components/Slider/Slider'
-import Ourwork from './components/OurWork/Ourwork'
-import Contact from './components/Contact/Contact'
-import  Projects  from './components/Projects/Projects'
+import { BrowserRouter as Router,Route, Link ,Switch } from "react-router-dom";
+import Home from './components/Home/Home';
+import Projects from './components/Projects/Projects';
+import Navbar from "./components/Navbar/Navbar"
 function App() {
   return (
     <div>
-      <Navbar/>
-      <Slider/>
-      <Ourwork/>
-      <Contact/>
-      <Projects/>
+      <Router>
+        <main>
+          <Navbar />
+        </main>
+        <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/Projects" exact component={Projects} />
+        </Switch>
+      </Router>
+
     </div>
   )
 }

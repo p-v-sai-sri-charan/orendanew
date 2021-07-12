@@ -6,13 +6,14 @@ import './assets/main.css';
 import App from './App';
 import "primereact/resources/themes/nova/theme.css"
 import "primeicons/primeicons.css";
+import "./Index.css"
 import "./assets/Custom.css"
 
 ReactDOM.render(
   <React.StrictMode>
-    <div style={{backgroundColor:"#050505"}}>
+    <div style={{ backgroundColor: "#050505" }}>
 
-    <App />
+      <App />
     </div>
   </React.StrictMode>,
   document.getElementById('root')
