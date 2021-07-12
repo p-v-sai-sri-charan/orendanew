@@ -1,0 +1,17 @@
+.p-button.p-button-outlined {
+    background-color: transparent;
+    color: black;
+    border: 3px solid #fdd835;
+    width: 50%;
+  }
+  
+  .p-button {
+    color: black;
+    background: #ffffff;
+    border: 1px solid black;
+    padding: 0.429rem 1rem;
+    font-size: 1rem;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    border-radius: 3px;
+    width:25%
+}
